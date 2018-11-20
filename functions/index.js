@@ -116,7 +116,6 @@ exports.sendNotificationChat = functions.database.ref('/messages/{user_id}/{chat
            notification: {
              title : `New Message from ${userName}`,
              body : message_txt,
-             icon : "default",
              sound : "default",
              tag : from_user_id,
              click_action : "com.example.asus.hangin_TARGET_NOTIFICATION"
