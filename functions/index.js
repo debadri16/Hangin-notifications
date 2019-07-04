@@ -2,7 +2,7 @@
 
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-admin.initializeApp(functions.config().firebase);
+admin.initializeApp();
 
 //notification for friend request
 exports.sendNotification = functions.database.ref('/notifications/{user_id}/{notification_id}').onWrite((data, context)  => {
